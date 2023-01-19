@@ -56,7 +56,11 @@ ul {
 .inputsDiv div {
     width: 33%;
     display: inline;
-    margin-left: 50px;
+    margin-left: 75px;
+}
+
+.inputsDiv div input {
+    max-width: 100px;
 }
 
 .physicalToggle ul li p {
