@@ -1,0 +1,111 @@
+body {
+    background-color: #c4bec3;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#formCounter {
+    background-color: #fff;
+    padding: 25px 100px 25px 100px;
+    border-radius: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.genderUl {
+    text-align: center;
+}
+
+.genderUl li {
+    display:  inline;
+    margin-right: 10px;
+}
+
+.genderRadio ul li input {
+    vertical-align: middle;
+    margin: -7px 0 0 0;
+}
+
+.genderUl li label {
+    font-size: 24px;
+}
+
+.physicsParams {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.inputsDiv div {
+    width: 33%;
+    display: inline;
+    margin-left: 50px;
+}
+
+.physicalToggle ul li p {
+    color: gray;
+    margin-top: -1px;
+    margin-left: 28px;
+}
+
+.physicalToggle ul li input {
+    vertical-align: middle;
+    margin: -7px 0 0 0;
+}
+
+.physicalToggle label{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.table2Columns {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonsClass {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.resultDiv {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    border-radius: 75px;
+    padding: 10px 30px 10px 30px;
+}
+
+.resultDiv ul div {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#withoutResult {
+    visibility: hidden;
+}
+
+#withResult {
+    visibility: visible;
+}

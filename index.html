@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="preload" href="fonts/pt-sans-caption-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pt-sans-caption-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Счётчик калорий</title>
+</head>
+<body class="page">
+  <main class="main">
+    <div class="container">
+        <h1>
+            Счётчик калорий
+        </h1>
+        <form class="" name="counter" action="#" method="post" id="formCounter">
+
+            <div class="genderRadio">
+                <h2>
+                    Пол
+                </h2>
+                <ul class="genderUl">
+                    <li>
+                        <input type="radio" name="gender" checked>
+                        <label>
+                            Мужчина
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender">
+                        <label>
+                            Женщина
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="physicsParams">  
+                <h2>
+                    Физические параметры
+                </h2>
+                <div class="inputsDiv">
+                    <div>
+                        <label>Возраст</label>
+                        <span>(лет)</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="0" id="inputAge" class="inputLabel" >
+                    </div>
+                    <div>
+                        <label>Рост</label>
+                        <span>(см)</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="0" id="inputHeight" class="inputLabel" >
+                    </div>
+                    <div>
+                        <label>Вес</label>
+                        <span>(кг)</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="0" id="inputWeight" class="inputLabel" >
+                    </div>
+                </div>
+            </div>
+            <div class="physicalToggle">
+                <h2>
+                    Физическая активность
+                </h2>
+                <ul>
+                    <table class="table2Columns">
+                        <tr>
+                            <td>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="physT" checked>
+                                        <label>
+                                            Минимальная
+                                        </label>
+                                    </div>
+                                    <p>
+                                        Сидячая работа и нет физических нагрузок
+                                    </p>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="physT">
+                                        <label>
+                                            Низкая
+                                        </label>
+                                    </div>
+                                    <p>
+                                        Редкие, нерегулярные тренировки, активность в быту
+                                    </p>
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="physT">
+                                        <label>
+                                            Средняя
+                                        </label>
+                                    </div>
+                                    <p>
+                                        Тренировки 3-5 раз в неделю
+                                    </p>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="physT">
+                                        <label>
+                                            Высокая
+                                        </label>
+                                    </div>
+                                    <p>
+                                        Тренировки 6-7 раз в неделю
+                                    </p>
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="physT">
+                                        <label>
+                                            Очень высокая
+                                        </label>
+                                    </div>
+                                    <p>
+                                        Больше 6 тренировок в неделю и физическая работа
+                                    </p>
+                                </li>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+
+            <div class="buttonsClass">
+                <button class="submitClass" name="submitButton" type="submit" disabled>
+                    Рассчитать
+                </button>
+                <button class= "resetClass" name="resetButton" type="reset" disabled>
+                    <span>
+                        Очистить поля и расчёт
+                    </span>
+                </button>
+            </div>
+        </form>
+
+        <section class="resultSection" id="withoutResult">
+            <div class="resultDiv">
+                
+                <h2>
+                    Ваша норма калорий
+                </h2>
+                <ul >
+                    <div>
+                        <li>
+                            <h3>
+                            <span class="normal_cal">3 800</span> ккал
+                            </h3>
+                            <p>
+                                поддержание веса
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <h3>
+                            <span class="min_cal">3 300</span> ккал
+                            </h3>
+                            <p>
+                                снижение веса
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <h3>
+                            <span class="max_cal">4 000</span> ккал
+                            </h3>
+                            <p>
+                                набор веса
+                            </p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
